@@ -1,4 +1,4 @@
-# Simple Graphl demo with Express
+# Simple GraphQL demo with Express
 
 ## Run
 - npm install
