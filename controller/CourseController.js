@@ -1,7 +1,7 @@
 
-class CourseModel {
+class CourseController {
 	
-	constructor(path='../data/course.js') {
+	constructor(path='../model/data/course.js') {
 		this.db = require(path);
 	}
 	
@@ -53,6 +53,6 @@ class CourseModel {
 	}
 }
 
-const obj = new CourseModel();
-obj.Cls = CourseModel;
+const obj = new CourseController();
+obj.Cls = CourseController;
 module.exports = obj;

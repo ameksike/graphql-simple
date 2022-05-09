@@ -3,14 +3,14 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 
-const model = require('./model/CourseModel');
-const schema = require('./schema/CourseSchema');
+const controller = require('./controller/CourseController');
+const schema = require('./model/schema/CourseSchema');
 
 const app = express();
 
 app.use('/graphql', graphqlHTTP({
   schema,
-  rootValue: model,
+  rootValue: controller,
   graphiql: true,
 }));
 
